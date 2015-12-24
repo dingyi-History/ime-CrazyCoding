@@ -1,0 +1,36 @@
+[ 2015-06-17T13:18:58+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'imicrolearn.iml_usersharecourseview' n'existe pas
+
+[ 2015-06-17T13:38:53+08:00 ] 127.0.0.1 /ilearn/user/$Verify-%3Eentry();
+ERR: 非法操作:$Verify->entry();
+
+[ 2015-06-17T16:52:33+08:00 ] 127.0.0.1 /ilearn/__APP__/user/login.html
+ERR: 无法加载控制器:__APP__
+
+[ 2015-06-17T16:55:28+08:00 ] 127.0.0.1 /ilearn/Public/indexassets/fonts/glyphicons-halflings-regular.woff2
+ERR: 无法加载控制器:Public
+
+[ 2015-06-17T16:55:29+08:00 ] 127.0.0.1 /ilearn/Public/indexassets/fonts/glyphicons-halflings-regular.woff
+ERR: 无法加载控制器:Public
+
+[ 2015-06-17T16:55:29+08:00 ] 127.0.0.1 /ilearn/Public/indexassets/fonts/glyphicons-halflings-regular.ttf
+ERR: 无法加载控制器:Public
+
+[ 2015-06-17T17:00:47+08:00 ] 127.0.0.1 /ilearn/User/...html
+ERR: 非法操作:..
+
+[ 2015-06-17T17:01:17+08:00 ] 127.0.0.1 /ilearn/..html
+ERR: 无法加载控制器:.
+
+[ 2015-06-17T17:02:23+08:00 ] 127.0.0.1 /ilearn/User/__APP__.html
+ERR: 非法操作:__APP__
+
+[ 2015-06-17T17:02:49+08:00 ] 127.0.0.1 /ilearn/User/..html
+ERR: 非法操作:.
+
+[ 2015-06-17T20:05:49+08:00 ] 127.0.0.1 /ilearn/course/typecourse?id=1
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'imicrolearn.iml_coursetype' n'existe pas
+
+[ 2015-06-17T20:27:23+08:00 ] 127.0.0.1 /ilearn/course/typecourse?id=1
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'imicrolearn.iml_coursetype' n'existe pas
+

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>i微学</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" href="__PUBLIC__/logo/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="imicrolearn" />
+  <link rel="stylesheet" href="__PUBLIC__/amazeassets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="__PUBLIC__/amazeassets/css/admin.css">
+  <link rel="stylesheet" href="__PUBLIC__/i/css/ilearn.css">
+<script>
+   window.onload=msg;
+  
+  function msg(){
+    var $modal = $('#msg');
+    $modal.modal();
+  }
+  </script>
+
+
+</head>
+<body>
+<include file="Public:header" />
+
+<block name="title"></block>
+
+<block name="sidebar">
+  <div id="container">
+  <div id="usercontent" class="am-cf admin-main">
+  <include file="Public:sidebar" />
+  <div class="admin-content">
+  <br>
+  <block name="usermain"></block>
+  
+  </div>
+  </div>
+  </div>
+</block>
+
+<block name="hr">
+<hr>
+</block>
+<include file="Public:footer" />
+<script src="__PUBLIC__/amazeassets/js/jquery.min.js"></script>
+<script src="__PUBLIC__/amazeassets/js/amazeui.min.js"></script>
+<script src="__PUBLIC__/amazeassets/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<extend name="./homebase"/>
+
+<block name="sidebar">
+<div class="am-g">
+<div id="container" class="am-u-sm-centered">
+
+<div id="addcourse" class="am-u-sm-10 am-u-sm-centered" >
+<div id="addtitle" class="am-text-center">
+<div style="height:10px;"></div>
+		<h1>分享教程，共建家园</h1>
+	<hr style="border-bottom:1px dashed #000; margin:5px;">	
+</div>
+<br>
+<div id="addbody">
+	<form class="am-form" action="__APP__/course/addcourse" method="post">
+  <fieldset>
+
+    <div class="am-form-group">
+      
+      <input type="text" name="cname" placeholder="教程标题" required>
+      <br>
+      <input type="text" name="ctitle" placeholder="教程简介" required>
+    </div>
+
+
+    <div class="am-form-group">
+      <label for="doc-select-1">选择教程分类</label>
+      <select id="doc-select-1"name="ctypeid">
+      <volist name="alltype" id="t">
+        <option value="{$t.tid}" >{$t.tname}</option>
+       </volist>
+      </select>
+      <span class="am-form-caret"></span>
+    </div>
+
+
+    <div class="am-form-group">
+      <label for="doc-ta-1">教程内容</label>
+      <textarea rows="6" id="doc-ta-1" required name="ccontent"></textarea>
+    </div>
+
+    <br>
+		<hr style="border-bottom:1px dashed #000; margin:5px;">	
+	
+    <button type="submit" class="am-btn am-btn-success  am-u-sm-6 am-u-sm-offset-3">提交</button>
+  </fieldset>
+</form>
+
+<br>
+</div>
+
+</div>
+</div>
+</div>
+
+</block>
+

@@ -1,0 +1,96 @@
+<extend name="./homebase"/>
+<block name="sidebar">
+
+<div id="allcoursetitle" style="background:#888888; line-height:100%;" >
+	<br>
+	<div id="container">
+	<div class="am-g">
+	<div class="am-u-sm-6">
+	<br>
+	<h1 style="color:white;">全部教程</h1>
+	</div>
+	
+	<div class="am-u-sm-4  am-u-md-2">
+  	<empty name="Think.session.userinfo">  
+    <a href="../user/login"><button type="button" class="am-btn am-btn-success am-btn-block">登录更精彩</button></a>
+  	<else />
+  	<a href="../course/showaddcourse"><button type="button" class="am-btn am-btn-success am-btn-block">分享教程</button></a>
+  	</empty> 
+  	<br> 
+  <a href="../way/showway"><button type="button" class="am-btn am-btn-primary am-btn-block">经验互动</button></a>
+  <br>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<div id="container">
+<div class="am-g">
+<div class="admin-sidebar am-offcanvas am-u-md-4 am-u-lg-3" style="padding:0;" id="sidebar">
+    <div class="am-offcanvas-bar admin-offcanvas-bar">
+      <ul id="cebian" class="am-list admin-sidebar-list am-text-center">
+      <li><br></li>
+      <li><a href="__APP__/course/showallcourse">教程总览<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+      <volist name="alltype" id="t">
+        <li>
+        <a href="__APP__/course/typecourse?id={$t.tid}">
+      {$t.tname}<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>  
+      </volist>
+        
+    <empty name="Think.session.userinfo">
+    <li><a href="__APP__/user/login"><span class="am-icon-home"></span> 登录后更精彩...<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        </li>
+    <else />
+        <li><a href="__APP__/user/userlikecourse"><span class="am-icon-home"></span> 我的收录<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        </li>
+      </empty>
+    
+      </ul>
+
+      <div class="am-panel am-panel-default admin-sidebar-panel">
+        <div class="am-panel-bd">
+          <p><span class="am-icon-bookmark"></span> 寄语</p>
+          <p>时光静好，与君语；<br>细水流年，与君同。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—— i微学</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <a class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" 
+    data-am-offcanvas="{target: '#sidebar'}"></a>
+
+
+    <div class="am-u-md-8 am-u-lg-9  am-u-sm-10 am-u-sm-centered am-u-md-uncentered">
+      <div class="am-g">
+      <volist name="allcourse" id="ac">
+        <div class="am-u-sm-12  am-u-md-4 am-u-lg-3 am-u-end">
+          
+          <div class="am-panel am-panel-secondary am-scrollspy-init am-scrollspy-inview am-animation-fade" data-am-scrollspy="{animation: 'fade', delay: 200}">
+
+          <div class="am-panel-hd">
+          <a href="__APP__/course/showonecourse?id={$ac.cid}">{$ac.cname}</a></div>
+          
+
+          <div class="am-panel-bd">
+          {$ac.ctitle}
+          </div>
+          </div>
+
+        </div>
+        </volist>
+      </div>
+        
+      </div>
+
+
+</div>
+</div>
+
+
+
+
+</block>
+

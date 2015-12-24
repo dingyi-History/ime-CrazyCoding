@@ -1,0 +1,51 @@
+<extend name="./homebase"/>
+
+<block name="title">
+<include file="Public:usertitle"/>
+</block>
+
+<block name="usermain">
+<div class="am-u-sm-10 am-u-sm-offset-1">
+<form class="am-form" action="../user/updateuserinfo" method="post">
+  <fieldset>
+    <legend>我的信息</legend>
+
+    <div class="am-form-group">
+      <label for="doc-ipt-email-1">用户名(不可更改)</label>
+      <input type="text" class="" id="doc-ipt-email-1" required name="name" value="{$Think.session.userinfo.uname}" disabled>
+    </div>
+
+    <div class="am-form-group">
+      <label for="doc-ipt-pwd-1">昵称</label>
+      <input type="text" class="" id="doc-ipt-pwd-1" value="{$Think.session.userinfo.unickname}" required name="unickname">
+    </div>
+	
+	 <div class="am-form-group">
+      <label for="doc-ipt-pwd-1">寄语</label>
+      <input type="text" class="" id="doc-ipt-pwd-1" value="{$Think.session.userinfo.utitle}" required name="utitle">
+    </div>
+
+	<div class="am-form-group">
+      <label for="doc-ipt-pwd-1">邮箱</label>
+      <input type="email" class="" id="doc-ipt-pwd-1" value="{$Think.session.userinfo.uemail}" name="uemail">
+    </div>
+
+    <div class="am-form-group">
+      <label for="doc-ipt-pwd-1">QQ</label>
+      <input type="number" class="" id="doc-ipt-pwd-1" value="{$Think.session.userinfo.uqq}" name="uqq">
+    </div>
+
+     <div class="am-form-group">
+      <label for="doc-ipt-pwd-1">所在地</label>
+      <input type="text" class="" id="doc-ipt-pwd-1" value="{$Think.session.userinfo.uaddress}" name="uaddress">
+    </div>
+    
+   
+
+    <p><button type="submit" class="am-btn am-btn-success">保存更改</button></p>
+  </fieldset>
+</form>
+
+</div>
+
+</block>

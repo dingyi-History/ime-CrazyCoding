@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+.container-fluid{
+	padding:0;
+}
+
+#full{
+	background:url("/images/footer.jpg");
+	background-size: cover;
+	position: fixed;
+}

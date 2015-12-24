@@ -1,0 +1,9 @@
+[ 2015-06-12T19:44:22+08:00 ] 127.0.0.1 /ilearn/Public/indexassets/fonts/glyphicons-halflings-regular.woff
+ERR: 无法加载控制器:Public
+
+[ 2015-06-12T19:44:22+08:00 ] 127.0.0.1 /ilearn/Public/indexassets/fonts/glyphicons-halflings-regular.ttf
+ERR: 无法加载控制器:Public
+
+[ 2015-06-12T19:44:22+08:00 ] 127.0.0.1 /ilearn/Public/indexassets/fonts/glyphicons-halflings-regular.svg
+ERR: 无法加载控制器:Public
+

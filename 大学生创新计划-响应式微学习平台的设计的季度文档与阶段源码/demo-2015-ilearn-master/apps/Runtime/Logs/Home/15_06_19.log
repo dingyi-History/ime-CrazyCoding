@@ -1,0 +1,9 @@
+[ 2015-06-19T09:38:37+08:00 ] 127.0.0.1 /ilearn/__APP__/user/usersharecourse.html
+ERR: 无法加载控制器:__APP__
+
+[ 2015-06-19T09:39:03+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse.html
+ERR: Think\Model:mycourse方法不存在！
+
+[ 2015-06-19T09:39:42+08:00 ] 127.0.0.1 /ilearn/course/showcourse.html
+ERR: 非法操作:showcourse
+

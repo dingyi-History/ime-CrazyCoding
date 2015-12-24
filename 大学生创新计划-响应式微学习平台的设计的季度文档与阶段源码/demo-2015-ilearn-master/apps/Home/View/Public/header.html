@@ -1,0 +1,51 @@
+<header class="am-topbar am-topbar-inverse  " id="header"  data-am-sticky="{animation: 'slide-top'}">
+  <div id="container" class="headerfix">
+  <h1 class="am-topbar-brand">
+    <a href="__APP__/" >&nbsp;&nbsp;&nbsp;&nbsp;i微学&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  </h1>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topnav'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="topnav">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <li class="am-hide-sm-only" ><a href="__APP__/">首页</a></li>
+      <li class="am-dropdown am-hide-sm-only" data-am-dropdown>
+      <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+          学习方向 <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <volist name="alltype" id="vo">
+          <li><a href="__APP__/course/typecourse?id={$vo.tid}">{$vo.tname}</a></li>
+         
+          </volist>
+        </ul>
+      </li>
+    </ul>
+
+          
+       <div class="am-topbar-right">
+       
+       <a href="__APP__/way/showway"><button class="am-btn am-btn-success am-topbar-btn am-btn-sm">互动经验</button></a>
+      <a href="__APP__/course/showallcourse"><button class="am-btn am-btn-success am-topbar-btn am-btn-sm">教程总览</button></a>
+       <a href="__APP__/index/indexabout"><button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">简介</button></a>
+            <empty name="Think.session.userinfo">      
+       <a href="__APP__/user/register"> <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">注册</button></a>
+       <a href="__APP__/user/login"><button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</button></a> 
+            <else /> 
+            <a href="__APP__/user/userlikecourse">
+            <button class="am-btn am-btn-warning am-topbar-btn am-btn-sm"> {$Think.session.userinfo.unickname|default="我是昵称"}<small>【点我】</small></button>
+            </a>
+            <a href="__APP__/user/logout">
+            <button class="am-btn am-btn-danger am-topbar-btn am-btn-sm">注销</button>
+            </a>
+            </empty>
+        </div>
+
+ 
+  
+  </div>
+  </div>
+  <div id="colorborder"></div>
+</header>
+

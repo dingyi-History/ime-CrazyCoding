@@ -1,0 +1,42 @@
+<extend name="./homebase"/>
+<block name="sidebar">
+
+
+<div id="login" >
+<div id="container">
+<div class="am-g">
+  <div class="am-u-sm-8 am-u-md-4 am-u-sm-centered">
+  <br><br><br><br><br><br>
+  <h2 style="color:white;">你好！小伙伴,请登录！</h2>
+<p style="color:white;">今天跬步，明日千里。</p>
+    <form class="am-form" action="./islogin" method="post">
+      <fieldset class="am-form-set">
+       <div class="am-input-group">
+  <span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+  <input type="text" class="am-form-field" placeholder="用户名" required name="name">
+</div>
+
+  <div class="am-input-group">
+  <span class="am-input-group-label"><i class="am-icon-lock am-icon-fw"></i></span>
+  <input type="password" class="am-form-field" placeholder="密码" required name="pwd">
+  </div>
+
+      </fieldset>
+      <button type="submit" class="am-btn am-btn-primary am-btn-block">登录</button>
+      <br>
+      <a href="./register"><button type="button" class="am-btn am-btn-warning am-btn-block">注册个账号</button></a>
+    </form>
+    <br><br><br><br><br><br>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+
+</block>
+<block name="hr">
+</block>
+
+

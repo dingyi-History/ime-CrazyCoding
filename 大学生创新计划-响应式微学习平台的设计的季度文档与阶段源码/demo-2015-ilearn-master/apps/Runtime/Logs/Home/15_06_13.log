@@ -1,0 +1,6 @@
+[ 2015-06-13T23:48:03+08:00 ] 127.0.0.1 /ilearn/course/typecourse
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'imicrolearn.iml_coursetype' n'existe pas
+
+[ 2015-06-13T23:48:04+08:00 ] 127.0.0.1 /ilearn/course/typecourse
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'imicrolearn.iml_coursetype' n'existe pas
+

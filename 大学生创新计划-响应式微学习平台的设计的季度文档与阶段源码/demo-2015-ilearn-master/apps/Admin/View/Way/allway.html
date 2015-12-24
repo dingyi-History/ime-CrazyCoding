@@ -1,0 +1,42 @@
+<extend name="./abase"/>
+<block name="main">
+
+
+    <div class="am-g">
+      <div class="am-u-sm-12 am-scrollable-horizontal">
+        <table class="am-table am-table-bd am-table-striped admin-content-table am-table-hover am-text-nowrap">
+          <thead>
+          <tr>
+         <th class="am-text-justify">管理员ID</th>
+         <th class="am-text-justify">用户名</th>
+         <th class="am-text-justify">密码</th>
+         <th class="am-text-justify">邮箱</th>
+         <th class="am-text-justify">编辑</th>
+          </tr>
+          </thead>
+          <tbody>
+          	<volist name="alladmin" id="vo">
+          <tr>
+          <td><span class="am-badge am-badge-success">{$vo.id}</span></td>
+			<td>{$vo.aname}</td>
+			<td>{$vo.apwd|md5}</td>
+			<td>{$vo.apwd}</td>
+           <td>  
+            <div class="am-dropdown" data-am-dropdown>
+                <button class="am-btn am-btn-default am-btn-xs am-dropdown-toggle" data-am-dropdown-toggle><span class="am-icon-cog"></span> <span class="am-icon-caret-down"></span></button>
+                <ul class="am-dropdown-content">
+                  <li><a href="#">1. 编辑</a></li>
+                  <li><a href="#">2. 删除</a></li>
+                </ul>
+              </div>
+              </td>
+          </tr>
+          </volist>
+         </tbody>
+         </table>
+         <hr>
+         <br><br><br>
+</div>
+</div>
+
+</block>

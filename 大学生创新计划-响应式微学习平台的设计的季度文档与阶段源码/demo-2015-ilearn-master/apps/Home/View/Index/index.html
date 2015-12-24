@@ -1,0 +1,89 @@
+<extend name="./homebase"/>
+<block name="sidebar">
+	<div class="am-g">
+	<div id="indextitle">
+		<div id="container">
+		<br>
+			<div class="am-g">
+			<a href="__APP__/way/showway">
+				<div id="fangkuai" style="height:100%;background:blue;box-shadow: 0px 0px 5px 3px #888888; " class="am-u-sm-4">
+				<br><br>
+					<h1 class="am-text-center am-text-middle"style="color:white">互动经验</h1>
+						<br><br>
+				</div>
+			</a>
+			<a href="__APP__/course/showallcourse">
+				<div id="fangkuai" style="height:100%;background:purple;box-shadow: 0px 0px 5px 3px #888888; " class="am-u-sm-4">
+				<br><br>
+					<h1 class="am-text-center am-text-middle" style="color:white">教程总览</h1>
+						<br><br>	
+				</div>
+			</a>
+			<a href="__APP__/user/userlikecourse">
+				<div id="fangkuai" style="height:100%;background:green;box-shadow: 0px 0px 5px 3px #888888; " class="am-u-sm-4">
+				<br><br>
+					<h1 class="am-text-center am-text-middle" style="color:white">我的学习</h1>
+						<br><br>	
+				</div>
+			</a>
+			</div>
+			<br>
+
+		</div>
+	</div>
+
+	<div id="container">
+	<hr>
+	<div class="am-g">
+	<div id="showcourse" class="am-u-sm-10 am-u-md-8 am-u-sm-centered am-u-md-uncentered am-u-lg-uncentered">
+
+	<volist name="course" id="c" offset="0" length='11'>
+	<div id="onecourse"class="am-cf">
+  
+	<div >
+  	<a href="__APP__/course/showonecourse?id={$c.cid}"><h3 style="padding:5px;margin:5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$c.cname}
+	<small class="am-fr">{$c.ctime}</small>
+  	</h3></a>
+  	<hr style="border-bottom:1px dashed #000; margin:5px;">
+ 	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$c.ctitle}</p>
+	</div>
+	</div>
+	</volist>
+	<a href="__APP__/course/showallcourse"><button type="button" class="am-btn am-btn-defult am-btn-block">查看更多...</button>
+	</a>
+	<empty name="Think.session.userinfo">
+	<a href="__APP__/course/showaddcourse"><button type="button" class="am-btn am-btn-primary am-btn-block">登录后分享</button>
+	</a>
+	<else />
+	<a href="__APP__/course/showaddcourse"><button type="button" class="am-btn am-btn-success am-btn-block">分享教程</button>
+	</a>
+
+	</empty>
+	</div>
+
+	
+
+	<div id="indexsidebar" class="am-u-md-4  am-hide-sm-only">
+		
+		<div id="typeimg" class="am-u-sm-centered">
+		<volist name="alltype" id="t">
+			<a href="__APP__/course/typecourse?id={$t.tid}">
+			<img id="imgtype" 
+			class="am-img-responsive" 
+			src="__PUBLIC__/images/typeimg/{$t.timg}.jpg" 
+			alt="">
+			</a>
+		</volist>
+			
+		</div>
+
+
+
+	</div>
+
+	</div>
+	</div>
+</div>
+
+
+</block>

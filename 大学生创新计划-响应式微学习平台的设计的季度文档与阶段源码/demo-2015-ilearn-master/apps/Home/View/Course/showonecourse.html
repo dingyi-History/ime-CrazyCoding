@@ -1,0 +1,51 @@
+<extend name='./homebase'/>
+<block name="sidebar">
+	<div class="am-g">
+	<div  style="background:#888888;height:140px;">
+		<div id="container">
+			<div class="am-u-sm-6">
+			<br>
+		<h2 style="color:white;">{$showonecourse.cname}</h2>
+		<small style="color:white;">分享于{$showonecourse.ctime}</small>
+			</div>
+			<div class="am-u-sm-4 am-u-md-2">
+			<br>
+			  <a href="../way/showway"><button type="button" class="am-btn am-btn-primary am-btn-block">经验互动</button></a>
+			  <br>
+			  <a href="../course/showallcourse"><button type="button" class="am-btn am-btn-success am-btn-block">教程总览</button></a>
+			  <br>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="am-g">
+		<div id="container">
+		<div id="coursecontent" class="am-u-sm-10 am-u-sm-centered am-u-md-8 am-u-md-uncentered" style="padding:30px;">
+			<p>{$showonecourse.ctitle}</p>
+			<hr style="border-bottom:1px dashed #000; margin:5px;">
+			<p>{$showonecourse.ccontent}</p>
+
+		</div>
+
+		<div class="am-u-md-4 am-hide-sm-only">
+			<ul class="am-list  am-list-border am-list-striped">
+				<volist name="othercourse" id="c">
+  			<li>
+  			<a href="../course/showonecourse?id={$c.cid}">
+  				{$c.cname}
+  			</a>
+  			</li>
+  				</volist>
+			</ul>
+
+
+
+		</div>
+	</div>
+	</div>
+
+<hr><br>
+</block>

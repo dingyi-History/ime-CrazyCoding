@@ -1,0 +1,152 @@
+body{
+	background: #ECECEC;
+}
+
+/* 最大1200px */
+#container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* 页头模块 */
+#header{
+	padding: 0;
+	margin: 0;
+	box-shadow: 0px 2px 1px #888888; 
+	background: black;
+	z-index: 99;
+}
+
+
+#logintext{
+	max-width: 100px;	
+}
+
+
+
+
+/* 用户页面模块 */
+#usertitle{
+	background:#ECECEC;
+	box-shadow: 0px 0px 2px 2px #888888; 
+	padding: 20px;
+}
+
+#touxiang{
+	max-width: 100px;
+	max-height: 100px;
+}
+
+#usercontent{
+	box-shadow: 0px 0px 2px 2px #888888; 
+	padding: 20px;
+	background: white;
+}
+
+/* 页脚模块 */
+#footer{
+	background: url("../../images/footer.jpg");
+	background-size: cover;
+	height:200px;
+	width: 100%;
+}
+
+#colorborder{
+	background: url("../../images/cb.jpg");
+	height: 5px;
+}
+
+
+/* 主页 样式 */
+#indextitle{
+	background: url("../../images/bg.jpg");
+	width: 100%;
+}
+
+#showcourse{
+	
+	
+}
+
+#onecourse{
+	box-shadow: 0px 0px 2px 1px #888888; 
+	margin: 10px;
+	height:120px;
+	overflow: hidden;
+}
+
+#imgtype{
+	width: 100%;
+	box-shadow: 0px 0px 2px 1px #888888; 
+	margin: 10px;
+	max-height: 160px;
+}
+
+#imgtype:hover{
+	border: 1px solid white;
+}
+
+#coursebrief{
+	margin: 10px;
+}
+
+#fangkuai:hover{
+	border: 1px solid white;
+
+}
+
+
+/* 课程展示页 */
+#course{
+	border: 1px solid #ECECEC;
+	height: 250px;
+	padding: 0;
+}
+
+#course:hover{
+		box-shadow: 0px 0px 2px 1px #888888; 
+}
+
+
+
+
+
+#onetype{
+	background: #ECECEC;
+	height: 50px;
+	line-height: 50px;
+}
+#onetype:hover{
+	box-shadow: 0px 0px 2px 1px #888888; 
+
+}
+
+/* 分类课程展示页 */
+
+#cebian li:hover{
+	background: rgb(255,194,100);
+}
+
+
+
+/* 用户登录页面 */
+#login{
+	background: url(../../images/loginbg.jpg);	
+	background-size: cover;
+}
+
+
+/*添加教程页  */
+#addcourse{
+	margin-top: 30px;
+	box-shadow: 0px 0px 2px 1px #888888;
+
+	background: white;
+}
+
+/*课程详情页*/
+#coursecontent{
+	background: white;
+	box-shadow: 0px 0px 2px 1px #888888;
+}
+

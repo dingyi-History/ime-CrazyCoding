@@ -1,0 +1,27 @@
+[ 2015-06-18T11:28:55+08:00 ] 127.0.0.1 /ilearn/__APP__/user/usersharecourse.html
+ERR: 无法加载控制器:__APP__
+
+[ 2015-06-18T11:30:05+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'imicrolearn.iml_usersharecourseview' n'existe pas
+
+[ 2015-06-18T11:38:56+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse.html
+ERR: Think\Model:usersharecourse方法不存在！
+
+[ 2015-06-18T11:41:30+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse
+ERR: Think\Model:usersharecourse方法不存在！
+
+[ 2015-06-18T11:45:56+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse
+ERR: Think\Model:mycourse方法不存在！
+
+[ 2015-06-18T11:46:27+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse
+ERR: Think\Model:mycourse方法不存在！
+
+[ 2015-06-18T12:04:32+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse
+ERR: Think\Model:mycourse方法不存在！
+
+[ 2015-06-18T12:09:08+08:00 ] 127.0.0.1 /ilearn/user/usersharecourse
+ERR: Think\Model:mycourse方法不存在！
+
+[ 2015-06-18T12:27:45+08:00 ] 127.0.0.1 /ilearn/course/showonecourse?id=1
+ERR: Think\Model:showonecourse方法不存在！
+
